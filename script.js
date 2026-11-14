@@ -3,7 +3,7 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 
 
-const HERO_MODEL = 'models/box.glb';
+const HERO_MODEL = 'box.glb';
 
 const candies = [
   { name: 'Cola Bottle', description: 'Cola bottles are fizzy-flavored candies shaped like glass cola bottles. They’re usually made from sugar, glucose syrup and gelatin, with a cola flavor. Many are coated with sour sugar. and their dark brown color and curvy bottle shape make them one of the most iconic candy in pick and mix. Some people nibble the top off first, while some eat the whole thing in one bite.', model: 'models/cola-bottles.glb' },
