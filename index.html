@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pick And Mix Candy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Pick And Mix Candy</h1>
+      <p>Pick and mix is simple, just a wall of open bins full of sweets, tongs, a plastic bag with a funny cartoon character on it, and complete freedom. You get to choose what goes in, and you pay by weight at the end. There will never be two bags that are the same, which is what make it fun!</p>
+
+
+
+<p>For me, it’s pure childhood! I remember standing in front of those bins and having the hardest dilemma of my life: Should I pick the gummy with sour sugar? Is one more candy really worth 1 more dollar? Every time it takes forever deciding, and the bag always feels heavier than it really was. </p>
+
+
+
+<p> That’s why I built this site! To check out each bins, take a closer look at every sweet, and get a bit of that feeling back. Browse the bins below, spin each candy around, and find out more about them!</p>
+    </div>
+    <div class="hero-model" id="hero-viewer"></div>
+  </section>
+  </section>
+
+  <div class="gap-image">
+    <img src="images/border.png" alt="Candy banner">
+  </div>
+
+  <main id="shelf">
+    <button class="bin"><img src="images/cola-bottle.png" alt="Cola Bottles"></button>
+    <button class="bin"><img src="images/gummy-bears.png" alt="Gummy Bear"></button>
+    <button class="bin"><img src="images/shark-gummies.png" alt="Shark Gummies"></button>
+    <button class="bin"><img src="images/jazzy.png" alt="Jazzies"></button>
+    <button class="bin"><img src="images/sour-belts.png" alt="Sour Belts"></button>
+    <button class="bin"><img src="images/squashies.png" alt="Squashies"></button>
+    <button class="bin"><img src="images/jelly-beans.png" alt="jelly beans"></button>
+    <button class="bin"><img src="images/chocolate-candy.png" alt="Chocolate candy"></button>
+    <button class="bin"><img src="images/rocketz.png" alt="rocketz"></button>
+  </main>
+
+  <div class="popup" id="popup">
+    <div class="popup-box">
+      <h2 id="popup-title"></h2>
+      <div class="popup-model" id="popup-viewer"></div>
+      <p id="popup-desc"></p>
+    </div>
+  </div>
+
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+    }
+  }
+  </script>
+  
+  <script type="module" src="script.js"></script>
+</body>
+</html>

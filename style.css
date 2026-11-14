@@ -1,0 +1,91 @@
+@font-face {
+  font-family: 'TitleFont';
+  src: url('fonts/Title.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'BodyFont';
+  src: url('fonts/Text.ttf') format('truetype');
+}
+body {
+  background-color: #8f8f8f;
+  background-image: url('images/bg.png');
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: 'BodyFont', sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+h1 {font-family: 'TitleFont', sans-serif; font-size: 4rem; color: #007ce9; margin: 0;}
+button {font-family: 'BodyFont', sans-serif;}
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 120vh;
+  gap: 100px;
+  padding: 0 40px;
+}
+.hero-text {max-width: 480px; text-align: left; color: #040b15;}
+.hero-model {width: 400px; height: 450px}
+
+
+.popup {position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); display: none; justify-content: center; align-items: center; z-index: 10;}
+.popup.open {display: flex;}
+.popup-box {background-color: #ffffff; width: 480px; max-width: 480px; max-height: 90vh; overflow-y:auto; padding: 30px; text-align: center;}
+.popup-box h2 {font-family: 'TitleFont', sans-serif; font-size: 3rem; color: #007ce9; margin-bottom: 0 0 20px 0;}
+.popup-model {height: 240px; background-color: #ffffff; margin-bottom: 20px;}
+#shelf {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0px;
+  width: 90%;
+  max-width: 1100px;
+  margin: 60px auto;
+}
+
+.bin {
+  aspect-ratio: 1 / 1;
+  min-width: 0;
+  padding: 0;
+  border: none;
+  overflow: hidden;
+  background-color: #ffffff;
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.bin:nth-child(even) {
+  background-color: #ffffff;
+}
+
+.bin:hover {
+  transform: scale(1.04);
+  z-index: 1;
+}
+
+.bin img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+:root:root:root *,
+:root:root:root *::before,
+:root:root:root *::after {
+  cursor: url("images/tongs-open.png") 4 4, auto !important;
+}
+
+:root:root:root body.pressing,
+:root:root:root body.pressing * {
+  cursor: url("images/tongs-closed.png") 4 4, auto !important;
+}
+
+.hero-text p {font-size: 1.5rem;line-height: 0.9;letter-spacing: 1.0px}
+
+#popup-desc {font-size: 1.4rem; line-height: 1.0;letter-spacing: 1.0px; color: #040b15}
